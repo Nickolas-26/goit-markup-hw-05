@@ -245,7 +245,8 @@ border-radius: 4px;
 }
 .close-btn{
 width: 30px;
-height: 30px;
+height:30px;
+border: 1px solid rgba(0, 0, 0, 0.1);
 border-radius: 50%;
   
 }
@@ -607,7 +608,6 @@ border-radius: 0px 0px 4px 4px;
 }
   
 .footer-link{
-  padding-top: 72px;
   padding-bottom: 100px;
 
 }
