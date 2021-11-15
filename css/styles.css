@@ -100,6 +100,9 @@ span.logo-style-white {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--primari-tittle-color);
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .site-nav::after {
@@ -154,6 +157,9 @@ span.logo-style-white {
 }
 
 .link-item{
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   margin-right: 50px;
 }
 .link-item:hover{
@@ -206,6 +212,9 @@ span.logo-style-white {
   line-height: 1.62;
   border: 0;
   border-radius: 4px;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -244,11 +253,20 @@ border-radius: 4px;
 
 }
 .close-btn{
-width: 30px;
-height:30px;
-border: 1px solid rgba(0, 0, 0, 0.1);
-border-radius: 50%;
-  
+  position:absolute;
+  top: 8px;
+  right: 8px;
+}
+.btn{
+  position:absolute;
+  /* top: 8px;
+  right: 8px; */
+  border: 1px solid rgba(0, 0, 0, 0.1);
+   
+  background-color:black;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
 }
 /* button-secondary */
 .button-secondary {
@@ -259,7 +277,9 @@ border-radius: 50%;
   color:var(--primari-tittle-color);
   border-radius: 4px;
   border: 0;
-  
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   font-family: Roboto;
   font-size: 16px;
   font-style: normal;
@@ -427,6 +447,9 @@ padding-bottom: 47px;
   display: block;
   
 }
+.sub-features{
+  position: absolute;
+}
 /* portfolio */
 .product-section-portfolio{
   display: flex;
@@ -475,6 +498,9 @@ padding-bottom: 47px;
   padding: 63px 24px;
   left: 0;
   top: 0;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .submenu-link{
@@ -538,6 +564,9 @@ border-radius: 0px 0px 4px 4px;
   align-items: center;
   justify-content: center; 
   color: var(--icon-color); 
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .team-icon-link:hover,
 .team-icon-link:focus{
@@ -578,6 +607,9 @@ border-radius: 0px 0px 4px 4px;
   font-size: 14px;
   line-height: 1.71;
   color: var(--primari-text-color);
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .link:hover {
   color: var(--primari-accent-color);
@@ -592,6 +624,9 @@ border-radius: 0px 0px 4px 4px;
   font-size: 14px;
   line-height: 1.71;
   color: rgba(255, 255, 255, 0.6);
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .link-item:not(:last-child){
   margin-bottom: 9px;
@@ -630,6 +665,9 @@ border-radius: 0px 0px 4px 4px;
   color: var(--primari-white-color);
   background-color: rgba(255, 255, 255, 0.1);
   display: flex;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-icon-link:hover,
 .footer-icon-link:focus{
@@ -688,6 +726,9 @@ text-transform: uppercase;
   color: var(--icon-color); 
   border: 1px solid #AFB1B8;
   border-radius: 4px;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients-link:hover,
 .clients-link:focus{
