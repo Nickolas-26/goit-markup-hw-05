@@ -88,6 +88,7 @@ span.logo-style-white {
   margin-right: 93px;
 }
 .nav-item {
+  position: relative;
   display: flex;
 }
 .nav-item:not(:last-child){
@@ -107,12 +108,12 @@ span.logo-style-white {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.site-nav::after {
+/* .site-nav::after {
   content: '';
   width: 100%;
   height: 4px;
   background-color:#2196F3 ;
-}
+} */
 .cards-section{
   padding-top: 94px;
   padding-bottom: 94px;
@@ -140,15 +141,24 @@ span.logo-style-white {
 }
 .site-nav-list-current {
   color: var(--primari-accent-color);
-  display: block;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  
+  
 }
 
 .site-nav-list-current::after{
+  position: absolute;
   content: '';
-  display: block;
+  display: flex;
+  justify-content: center;
+  margin-top: 28px;
 width: 100%;
 height: 4px;
-border-color: var(--primari-accent-color);
+background-color: var(--primari-accent-color);
+border-radius: 2px;
 }
 .auth-nav {
   margin-left: auto;
@@ -264,8 +274,22 @@ border-radius: 4px;
 }
 .close-btn{
   position:absolute;
-  top: 8px;
   right: 8px;
+  top:8px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: none;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.close-btn-icon{
+  width:11px;
+  height: 11px;
+  
+  
 }
 .btn{
   position:absolute;
@@ -394,6 +418,11 @@ padding-bottom: 47px;
 }
 
 .team-icon{
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
+
   width: 20px;
   height: 20px;
   fill: currentColor;
@@ -438,7 +467,7 @@ padding-bottom: 47px;
 .product-tittle {
   margin-bottom: 50px;
   font-family: Roboto;
-  font-style: normal;ƒ
+  font-style: normal;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -595,18 +624,19 @@ border-radius: 0px 0px 4px 4px;
   align-items: center;
   justify-content: center; 
   color: var(--icon-color); 
+  border-radius: 50%;
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .team-icon-link:hover,
 .team-icon-link:focus{
-  border-radius: 50%;
+  /* border-radius: 50%; */
   background-color: var(--primari-accent-color);
 }
 .team-icon-link:hover .team-icon,
 .team-icon-link:focus .team-icon{
-  background-color: var(--primari-accent-color);
+  
   color: #ffffff;
 }
 
