@@ -505,14 +505,7 @@ padding-bottom: 47px;
 }
 
 .product-submenu{
-  padding: 27px 82px;
-  font-family: Roboto;
-font-style: normal;
-font-weight: 700;
-font-size: 14px;
-line-height: 16px;
-text-align: center;
-color: white;
+  
 }
 .submenu-wrapper{
   position: relative;
@@ -572,6 +565,11 @@ color: white;
   top: 0;
   transform: translateY(100%);
   transition: transform 250ms ease;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.56;
 }
 
 .submenu-link{
